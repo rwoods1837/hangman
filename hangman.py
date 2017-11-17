@@ -6,7 +6,9 @@
 #Hangman Game
 #
 
-word = "chasecanrun"
+import random
+
+word = ["trains", "chasecanrun", "krispykreme", "dogs", "cats", "computer", "phone", "iphone", "memes", "olivegarden", "stephensucks", "python"]
 
 
 def start_screen():
@@ -25,13 +27,14 @@ def start_screen():
                                                                      
 
 def get_puzzle(word):
-    return word
-
+    return random.choice(word)
+    
 def get_solved(puzzle, guesses):
     solved = ""
     for letter in puzzle:
         if letter in guesses:
             solved += letter
+
         
         else:
             solved += "-"
@@ -40,7 +43,7 @@ def get_solved(puzzle, guesses):
 
 def get_guess(name):
     while True:
-        guess = input("Guess a number " + name + ": ")
+        guess = input("Guess a letter " + name + ": ")
         if guess.isalpha() == True and len(guess) == 1:
             return guess.lower()
         else:
@@ -100,7 +103,7 @@ def play():
         lose()
 
 playing = True
-name = input("Whats is thoust name?")
+name = input("Whats be thoust name? ")
 start_screen()
 while playing:
     play()
