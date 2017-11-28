@@ -1,14 +1,15 @@
 #
 #Ryan Woods
 #
-#11/9/17 - 
+#11/9/17 - 11/20/17
 #
 #Hangman Game
 #
 
 import random
+import time
 
-word = ["trains", "chasecanrun", "krispykreme", "dogs", "cats", "computer", "phone", "iphone", "memes", "olivegarden", "stephensucks", "python"]
+word = ["trains", "chasecanrun", "krispykreme", "dogs", "cats", "computer", "garlicbread", "iphone", "memes", "olivegarden", "stephensucks", "python"]
 
 
 def start_screen():
@@ -22,7 +23,6 @@ def start_screen():
  ▒ ░▒░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░  ░   ░ ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░
  ░  ░░ ░  ░   ▒      ░   ░ ░ ░ ░   ░ ░      ░     ░   ▒      ░   ░ ░ 
  ░  ░  ░      ░  ░         ░       ░        ░         ░  ░         ░ 
-
     """)    
                                                                      
 
@@ -77,6 +77,7 @@ def credit():
 *This awesome game was created by Ryan W. on 11/14/17*
 ******************************************************
     """)
+    time.sleep(5)
             
 def play():
     limit = 10
