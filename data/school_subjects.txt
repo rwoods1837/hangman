@@ -1,0 +1,11 @@
+School Subjects
+math
+science
+english
+socialstudies
+spanish
+french
+webpage
+computerprogramming
+personalfinance
+lunch
